@@ -38,6 +38,20 @@ public class SoftwinnerIO extends CordovaPlugin {
         } else if (action.equals("closeLed")) {
             this.closeLED(callbackContext);
             return true;
+        } else if (action.equals("setMulSel")) {
+            String pinName = args.getString(0);
+            int pinNumber = args.getInt(1);
+            int flag = args.getInt(2);
+            this.setMulSel(pinName, pinNumber, flag, callbackContext);
+        } else if (action.equals("writeGpio")) {
+            String pinName = args.getString(0);
+            int pinNumber = args.getInt(1);
+            int flag = args.getInt(2);
+            this.writeGpio(pinName, pinNumber, flag, callbackContext);
+        } else if (action.equals("readGpio")) {
+            String pinName = args.getString(0);
+            int pinNumber = args.getInt(1);
+            this.readGpio(pinName, pinNumber, callbackContext);
         }
         return false;
     }
@@ -66,5 +80,20 @@ public class SoftwinnerIO extends CordovaPlugin {
     protected void adjustYellow(int level, CallbackContext callbackContext) {
         Config.adjustYellow(level);
         callbackContext.success("Adjusted YELLOW");
+    }
+
+    protected void setMulSel(String pinName, int pinNumber, int flag, CallbackContext callbackContext) {
+        Gpio.setMulSel(pinName, pinNumber, flag);
+        callbackContext.success("setMulSel");
+    }
+
+    protected void writeGpio(String pinName, int pinNumber, int flag, CallbackContext callbackContext) {
+        Gpio.writeGpio(pinName, pinNumber, flag);
+        callbackContext.success("writeGpio");
+    }
+
+    protected void readGpio(String pinName, int pinNumber, CallbackContext callbackContext) {
+        int ret = Gpio.readGpio(pinName, pinNumber);
+        callbackContext.success(ret);
     }
 }
