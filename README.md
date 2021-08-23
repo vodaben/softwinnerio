@@ -3,8 +3,7 @@
 # How to use
 1. add the plugins to your project
 `ionic cordova plugins add https://github.com/vodaben/softwinnerio.git`
-2. add declaration to your component
-`declare let cordova: any;`
+2. add `declare let cordova: any;` to your component
 3. call functions in `cordova.plugins.SoftwinnerIO`
 
 # LED API
