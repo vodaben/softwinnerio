@@ -1,0 +1,34 @@
+{
+  "_from": "git+https://github.com/luckxiang/cordova-plugin-serial-port.git",
+  "_id": "serialportplugin@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/serialportplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/luckxiang/cordova-plugin-serial-port.git",
+    "rawSpec": "https://github.com/luckxiang/cordova-plugin-serial-port.git",
+    "saveSpec": "git+https://github.com/luckxiang/cordova-plugin-serial-port.git",
+    "fetchSpec": "https://github.com/luckxiang/cordova-plugin-serial-port.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/luckxiang/cordova-plugin-serial-port.git#d4985a813d55c4645b953def3d1e961cc23f5bc9",
+  "_spec": "https://github.com/luckxiang/cordova-plugin-serial-port.git",
+  "_where": "D:\\workspace\\TestLED",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "ionic3 基于cordova编写的安卓串口通信插件  ionic3 serial port plugins for android",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "softwinnerio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
