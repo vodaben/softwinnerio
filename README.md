@@ -1,9 +1,11 @@
 # Cordova Softwinner LED/GPIO Plugin
 
 # How to use
-1. add the plugins to your project 'ionic cordova plugins add https://github.com/vodaben/softwinnerio.git'
-2. add 'declare let cordova: any;' to the component
-3. call 'cordova.plugins.SoftwinnerIO.<fn>()'
+1. add the plugins to your project
+`ionic cordova plugins add https://github.com/vodaben/softwinnerio.git`
+2. add declaration to your component
+`declare let cordova: any;`
+3. call functions in `cordova.plugins.SoftwinnerIO`
 
 # LED API
 
