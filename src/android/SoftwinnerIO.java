@@ -43,20 +43,20 @@ public class SoftwinnerIO extends CordovaPlugin {
             int pinNumber = args.getInt(1);
             int flag = args.getInt(2);
             if ( pinName.length() > 0 ) {
-                this.setMulSel(pinName[0], pinNumber, flag, callbackContext);
+                this.setMulSel(pinName.charAt(0), pinNumber, flag, callbackContext);
             }
         } else if (action.equals("writeGpio")) {
             String pinName = args.getString(0);
             int pinNumber = args.getInt(1);
             int flag = args.getInt(2);
             if ( pinName.length() > 0 ) {
-                this.writeGpio(pinName[0], pinNumber, flag, callbackContext);
+                this.writeGpio(pinName.charAt(0), pinNumber, flag, callbackContext);
             }
         } else if (action.equals("readGpio")) {
             String pinName = args.getString(0);
             int pinNumber = args.getInt(1);
             if ( pinName.length() > 0 ) {
-                this.readGpio(pinName[0], pinNumber, callbackContext);
+                this.readGpio(pinName.charAt(0), pinNumber, callbackContext);
             }
         }
         return false;
