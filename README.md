@@ -8,7 +8,7 @@
 
 # LED API
 
-#### adjustRed, adjustGreen, adjustYellow
+## adjustRed, adjustGreen, adjustYellow
 
 Set LED to R/G/Y. With brightness level 1-4
 
@@ -20,7 +20,7 @@ example:
 cordova.plugins.SoftwinnerIO.adjustRed(1);
 ```
 
-#### closeLed
+## closeLed
 
 Close LED
 
@@ -32,7 +32,7 @@ cordova.plugins.SoftwinnerIO.closeLed();
 
 # GPIO API
 
-#### setMulSel
+## setMulSel
 
 Set GPIO direction
 
@@ -47,7 +47,7 @@ cordova.plugins.SoftwinnerIO.setMulSel('E', 0, 1);
 
 ```
 
-#### writeGpio
+## writeGpio
 
 Write to GPIO
 
@@ -62,7 +62,7 @@ cordova.plugins.SoftwinnerIO.writeGpio('E', 0, 1);
 
 ```
 
-#### readGpio
+## readGpio
 
 Write to GPIO
 
