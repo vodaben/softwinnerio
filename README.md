@@ -29,7 +29,7 @@ cordova.plugins.SoftwinnerIO.closeLed();
 
 ```
 
-# LED API
+# GPIO API
 
 #### setMulSel
 
